@@ -72,9 +72,16 @@
 
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/Kartik-exe/sms-db-schema</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencyManagement>
 		<dependencies>
-
 			<!-- Spring Cloud BOM -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -83,7 +90,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
