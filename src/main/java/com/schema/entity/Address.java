@@ -10,6 +10,7 @@ import java.util.Objects;
 @Entity
 @Getter
 @Setter
+@Table(name = "ADDRESS")
 public class Address implements Serializable {
 
     @Id

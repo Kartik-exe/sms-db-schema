@@ -10,6 +10,7 @@ import java.util.Objects;
 @Entity
 @Getter
 @Setter
+@Table(name = "DEPARTMENT")
 public class Department implements Serializable {
 
     @Id

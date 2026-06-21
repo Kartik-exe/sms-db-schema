@@ -32,17 +32,17 @@ public class Student implements Serializable {
     @Column(name = "EMAIL")
     private String email;
 
-//    @ManyToOne
-//    @JoinColumn(name = "DEPARTMENT_ID")
-//    private Department department;
-//
-//    @ManyToOne
-//    @JoinColumn(name = "COURSE_ID")
-//    private Course course;
-//
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "ADDRESS_ID")
-//    private Address address;
+    @ManyToOne
+    @JoinColumn(name = "DEPARTMENT_ID")
+    private Department department;
+
+    @ManyToOne
+    @JoinColumn(name = "COURSE_ID")
+    private Course course;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ADDRESS_ID")
+    private Address address;
 
 
     @Override
